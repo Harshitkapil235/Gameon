@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 400px;
+  height: 300px;
+  margin: 15px auto;
+
+}
+
+.container h1 {
+  font-family: 'Agbalumo', sans-serif;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 1px;
+}
+
+.container .btn {
+  font-family: 'Agbalumo', sans-serif;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: transparent;
+  position: relative;
+  left: 40%;
+  margin-bottom: 12px;
+  width: 70px;
+  background-color: rgb(43, 255, 0);
+  box-shadow: 2px 2px white;
+  transition: transform 0.2s, box-shadow .2s;
+}
+.btn:hover{
+  cursor: pointer;
+}
+
+.container .btn:active {
+  box-shadow: 0px 0px wheat;
+  transform: translateX(2px) translateY(2px);
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.glass,
+.user,
+.computer {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 00, 0.37);
+}
+
+.tittle {
+  width: 200px;
+  height: 150px;
+  padding-top: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+  margin-bottom: 2px;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.7), 0 0 2px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.7);
+  /* Add multiple shadows to create a glowing effect */
+
+}
+
+.tittle h1 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+.tittle #r {
+  font-size: 60px;
+  line-height: .3px;
+}
+
+.tittle #p {
+  font-size: 50px;
+  line-height: 20px;
+}
+
+.tittle #s {
+  font-size: 40px;
+  line-height: 2px;
+}
+
+.computer,
+.user {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
+.user {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.computer {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.paper {
+  display: block;
+  margin: 25px auto;
+  height: 70px;
+  filter: drop-shadow(2px 2px 1px black);
+}
+.shake-animation-u{
+animation: shake-user 2s ;
+}
+.shake-animation-c{
+animation: shake-com 2s ;
+}
+.stone {
+  display: block;
+  margin: 25px auto;
+  height: 70px;
+
+  filter: drop-shadow(2px 2px 1px black);
+}
+#scissor , #paper , #stone{
+  height: 50px;
+  filter: drop-shadow(2px 2px 1px rgb(255, 255, 255));
+}
+#scissor , #paper , #stone:hover{
+  cursor: pointer;
+}
+.symbols{
+  display: flex;
+  justify-content: space-around;
+}
+
+.inner h2{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  -webkit-text-stroke:.1px  black;
+}
+@keyframes shake-user {
+0% {
+  transform: rotate(0deg);
+}
+25% {
+  transform: rotate(10deg);
+}
+50% {
+  transform: rotate(0deg);
+}
+75% {
+  transform: rotate(5deg);
+}
+100% {
+  transform: rotate(0deg);
+}
+}
+@keyframes shake-com {
+0% {
+  transform: rotate(0deg);
+}
+25% {
+  transform: rotate(5deg);
+}
+50% {
+  transform: rotate(0deg);
+}
+75% {
+  transform: rotate(10deg);
+}
+100% {
+  transform: rotate(0deg);
+}
+}
+
+@media (max-width:500px) {
+body{
+  background-image: url(back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.container{
+    width: 250px;
+}
+}
